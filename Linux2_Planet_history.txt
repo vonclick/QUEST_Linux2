@@ -1,0 +1,20 @@
+  337  clear
+  338  sudo apt-get install -y tree wget unzip
+  339  mkdir ~/quetes/shell
+  340  cd ~/quetes/shell
+  341  wget https://github.com/bhubr/bhubr.github.io/raw/master/wild/planets.zip
+  342  unzip planets.zip
+  343  eog planets
+  344  cd planets
+  345  mkdir  real fictional inhabited
+  346  cd real 
+  347  mkdir  telluric  gas-giants  dwarf-planets
+  348  cd ..
+  349  cp  arrakis.jpeg   cybertron.jpeg   coruscant.jpeg   fictional
+  350  mv  arrakis.jpeg   cybertron.jpeg   coruscant.jpeg   fictional
+  351  mv  pluto.jpeg  real/dwarf-planets
+  352  mv  uranus.jpeg  jupiter.jpeg  neptune.jpeg  saturn.jpeg  real/gas-giants
+  353  mv  mars.jpeg   earth.jpeg   mercury.jpeg  venus.jpeg  real/telluric
+  354  cp  fictional/arrakis.jpeg    fictional/cybertron.jpeg   fictional/coruscant.jpeg    real/telluric/earth.jpeg   inhabited
+  355  rm -r  real/dwarf-planets
+
